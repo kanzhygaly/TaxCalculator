@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="author" content="kanzhygaly@gmail.com">
+    <meta name="description"
+          content="Зарплатный Калькулятор для расчета NET(чистой) зарплаты от GROSS(грязной) в Казахстане.">
+    <meta name="keywords" content="GROSS NET ЗАРПЛАТА КАЛЬКУЛЯТОР РАСЧЕТ КАЗАХСТАН">
+    <!--<link rel="icon" href="favicon.ico">-->
+
+    <title>Зарплатный Калькулятор</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="container">
+    <div class="header clearfix">
+        <nav>
+            <ul class="nav nav-pills pull-xs-right">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">RU <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index_en.html">EN</a>
+                </li>
+            </ul>
+        </nav>
+        <!--<h3 class="text-muted">Зарплатный Калькулятор</h3>-->
+    </div>
+
+    <div class="jumbotron">
+        <h2 style="text-align: center">Расчет NET зарплаты в Казахстане</h2>
+
+        <form id="myForm" onsubmit="handleFormSubmit(this)">
+            <div class="form-group">
+                <label for="gross">Gross зарплата</label>
+                <input type="number" id="gross" class="form-control" name="gross"/>
+            </div>
+            <div class="form-group">
+                <label for="net">Net зарплата</label>
+                <input type="number" id="net" class="form-control" disabled/>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Рассчитать</button>
+        </form>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2016 kanzhygaly</p>
+    </footer>
+
+</div>
+<!-- /container -->
+
+<!-- Bootstrap core JavaScript
+    ================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="js/bootstrap.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
